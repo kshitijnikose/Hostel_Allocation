@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        This is the result of addition of hostel students to database.
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                <td>
+                    <h4>id: </h4>
+                </td>
+                </th>
+                <th>
+                <td>
+                    <h4>boxname: </h4>
+                </td>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="pp : ${Prasad}">
+                <td th:text="${pp.id}"></td>
+                <td th:text="${pp.boxname}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
